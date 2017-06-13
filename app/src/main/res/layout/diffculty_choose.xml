@@ -1,58 +1,35 @@
-<!--
- ! Excerpted from "Hello, Android",
- ! published by The Pragmatic Bookshelf.
- ! Copyrights apply to this code. It may not be used to create training material,
- ! courses, books, articles, and the like. Contact us if you are in doubt.
- ! We make no guarantees that this code is fit for any purpose.
- ! Visit http://www.pragmaticprogrammer.com/titles/eband4 for more book information.
--->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/menu_background"
-    android:elevation="@dimen/elevation_high"
-    android:padding="@dimen/menu_padding"
-    tools:context=".SudokuActivity"
-    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
     android:layout_gravity="center"
-    android:baselineAligned="false">
+    android:background="@drawable/menu_background"
+    android:baselineAligned="false"
+    android:elevation="8dp"
+    tools:context=".SudokuActivity">
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="black"
-        android:layout_marginBottom="@dimen/menu_space"
+        android:background="@android:color/black"
         android:text="@string/long_app_name"
-        android:textAppearance="?android:textAppearanceLarge"
-        android:gravity="center"
-        android:textSize="@dimen/menu_text_size"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white" />
 
-    <Button
+    <TextView
         android:id="@+id/easy_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/menu_button_margin"
-        android:padding="@dimen/menu_button_padding"
-        android:text="@string/easy_label" />
+        android:text="@string/easy_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <Button
+    <TextView
         android:id="@+id/medium_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="@dimen/menu_button_margin"
-        android:padding="@dimen/menu_button_padding"
-        android:text="@string/medium_label" />
+        android:layout_gravity="left"
+        android:text="@string/medium_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <Button
+    <TextView
         android:id="@+id/hard_button"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_margin="@dimen/menu_button_margin"
-        android:padding="@dimen/menu_button_padding"
-        android:text="@string/hard_label" />
-</LinearLayout>
+        android:text="@string/hard_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="@android:color/holo_green_dark" />
+</TableLayout>
