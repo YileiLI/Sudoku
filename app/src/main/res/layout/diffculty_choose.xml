@@ -11,7 +11,8 @@
 
     <TextView
         android:background="@android:color/black"
-        android:text="@string/long_app_name"
+        android:text="Difficulty"
+        android:textSize="40px"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textColor="@android:color/white" />
 
